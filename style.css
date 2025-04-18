@@ -1,0 +1,384 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+  background: url('your-flyer-image.jpg') center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #0ea5e9;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0284c7;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+/* Services Section */
+.services {
+  background-color: #e2e8f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.service {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+/* Jobs Section */
+.jobs {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.jobs h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+.services {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #084c61;
+  color: white;
+}
+
+.services h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background-color: #0b7189;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+.jobs {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #063547;
+  color: white;
+}
+
+.jobs h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.jobs p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.job {
+  background-color: #0b7189;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.job:hover {
+  transform: scale(1.05);
+}
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #0f4c5c;
+  color: white;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.contact-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp {
+  background-color: #25d366;
+  color: white;
+}
+
+.call {
+  background-color: #facc15;
+  color: black;
+}
+
+.whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+.call:hover {
+  background-color: #eab308;
+}
+/* Navigation Bar */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #0f4c5c;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #facc15;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #0f4c5c;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .hero button {
+    width: 100%;
+  }
+
+  .services, .jobs, .contact {
+    padding: 30px 15px;
+  }
+
+  .services h2, .jobs h2, .contact h2 {
+    font-size: 1.5em;
+  }
+
+  .services ul, .jobs ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero {
+  background-image: url('image/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100vw;              /* Full width of viewport */
+  height: 100vh;             /* Full height of viewport */
+
+  color: rgb(244, 242, 242);
+  text-align: center;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
